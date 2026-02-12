@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Creative | Studio Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root { --primary-blue: #1F3A93; --accent-blue: #5DADE2; --charcoal: #2C3E50; }
+        body { font-family: -apple-system, sans-serif; color: var(--charcoal); opacity: 0; transition: opacity 0.5s ease-in-out; }
+        h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; }
+        .glass-nav { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); }
+        .page-visible { opacity: 1; }
+        .fade-out { opacity: 0; }
+    </style>
+</head>
+<body class="bg-white">
+    <nav id="main-nav" class="fixed w-full z-50 transition-all duration-300 py-6">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2">
+                <div class="w-10 h-10 rounded flex items-center justify-center"><img src="imgs/Clogo.png" alt="CarbonCreative Logo"></div>
+                <span class="font-bold text-xl tracking-tighter text-[#1F3A93]">CARBON<span class="font-light text-[#2C3E50]">CREATIVE</span></span>
+            </a>
+            <div class="hidden md:flex items-center gap-8">
+                <a href="index.html" class="text-xs font-bold uppercase tracking-wider text-[#5DADE2]">Home</a>
+                <a href="services.html" class="text-xs font-bold uppercase tracking-wider hover:text-[#5DADE2]">Services</a>
+                <a href="work.html" class="text-xs font-bold uppercase tracking-wider hover:text-[#5DADE2]">Work</a>
+                <a href="about.html" class="text-xs font-bold uppercase tracking-wider hover:text-[#5DADE2]">About</a>
+                <a href="support.html" class="text-xs font-bold uppercase tracking-wider hover:text-[#5DADE2]">Support</a>
+                <a href="contact.html" class="bg-[#1F3A93] text-white px-6 py-2 rounded-full text-xs font-bold hover:bg-[#5DADE2] transition-colors">START PROJECT</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="pt-48 pb-32 px-6 text-center">
+            <h1 class="text-6xl md:text-9xl font-black text-[#1F3A93] tracking-tighter leading-none mb-10">WE LAUNCH <br/> <span class="text-[#5DADE2]">PRODUCTS.</span></h1>
+            <p class="text-xl md:text-2xl max-w-2xl mx-auto mb-12">Strategic storytelling for the digital economy. We turn product concepts into viral movements.</p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="contact.html" class="bg-[#1F3A93] text-white px-10 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all shadow-xl">Get Started</a>
+                <a href="work.html" class="border-2 border-[#1F3A93] text-[#1F3A93] px-10 py-5 rounded-full font-bold text-lg hover:bg-gray-50 transition-all">View Work</a>
+            </div>
+        </section>
+
+        <section class="py-20 bg-gray-50 px-6">
+            <div class="max-w-7xl mx-auto">
+                <div class="bg-[#1F3A93] rounded-[40px] overflow-hidden flex flex-col lg:flex-row shadow-2xl">
+                    <div class="lg:w-1/2 p-12 md:p-20 text-white">
+                        <span class="text-[#5DADE2] font-bold uppercase tracking-widest text-sm mb-4 block">Featured Launch</span>
+                        <h2 class="text-4xl md:text-6xl font-black mb-6">Burnt Cones Gelato</h2>
+                        <p class="text-xl opacity-80 mb-10">How we sold out a boutique gelato launch in 48 hours using social storytelling.</p>
+                        <a href="work.html" class="bg-white text-[#1F3A93] px-8 py-4 rounded-full font-bold hover:bg-[#5DADE2] hover:text-white transition-all inline-block">Case Study</a>
+                    </div>
+                    <div class="lg:w-1/2 min-h-[400px] bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1501443762994-82bd5dace89a?q=80&w=1200')"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-[#2C3E50] text-white py-20 px-6">
+        <div class="max-w-7xl mx-auto text-center">
+            <h3 class="font-bold text-2xl mb-6">CARBON<span class="opacity-50 font-light">CREATIVE</span></h3>
+            <p class="text-gray-400 mb-10">Singapore HQ / Remote Global</p>
+            <p class="text-xs text-gray-500">© 2026 Carbon Creative Studio.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="scripts.js"></script>
+</body>
+</html>
